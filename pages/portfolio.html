@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="photo, photographer, photography, images, landscapes, pets, visual, artistic, nature, people">
+    <meta name="description"
+        content="We create photographs that not only capture a moment, but also capture a feeling and essence.">
+    <link rel="shortcut icon" href="../assets/img/icon/faviconCamera.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../sass/main.css">
+    <script src="https://kit.fontawesome.com/614ec76b61.js" crossorigin="anonymous"></script>
+    <title>Portfolio | Timeless Photography</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <!-- Menu desktop -->
+            <nav class="nav-desktop">
+                <ul class="horizontal">
+                    <li class="horizontal-item"><a href="../index.html" class="horizontal-link">Home</a></li>
+                    <li class="horizontal-item"><a href="./portfolio.html" class="horizontal-link">Portfolio</a>
+                        <ul class="vertical">
+                            <li class="vertical-item"><a href="./people.html" class="vertical-link">People</a></li>
+                            <li class="vertical-item"><a href="./nature.html" class="vertical-link">Nature</a></li>
+                            <li class="vertical-item"><a href="./pets.html" class="vertical-link">Pets</a></li>
+                        </ul>
+                    </li>
+                    <li class="horizontal-item"><a href="./about.html" class="horizontal-link">About</a></li>
+                    <li class="horizontal-item"><a href="./contact.html" class="horizontal-link">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Menu desktop, end -->
+            <!-- Menu mobile -->
+            <nav class="nav-mobile">
+                <div class="mobile-button"><i class="fa-solid fa-bars"></i>
+                    <ul class="mobile">
+                        <li class="mobile-item"><a href="../index.html" class="mobile-link">Home</a></li>
+                        <li class="mobile-item"><a href="./portfolio.html" class="mobile-link">Portfolio</a>
+                            <ul class="mobile-sub">
+                                <li class="sub-item"><a href="./people.html" class="sub-link">People</a></li>
+                                <li class="sub-item"><a href="./nature.html" class="sub-link">Nature</a></li>
+                                <li class="sub-item"><a href="./pets.html" class="sub-link">Pets</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-item"><a href="./about.html" class="mobile-link">About</a></li>
+                        <li class="mobile-item"><a href="./contact.html" class="mobile-link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Menu mobile, end -->
+        </header>
+        <main>
+            <div class="container">
+                <h1 class="title">Portfolio</h1>
+            </div>
+            <!-- Carousel Desktop -->
+            <div class="carousel-desktop">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="./people.html"><img src="../assets/img/imgCarousel/imgCarouselPeople.jpg" class="d-block w-100" alt="girl"></a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>People</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="./nature.html"><img src="../assets/img/imgCarousel/imgCarouselNature.jpg" class="d-block w-100" alt="road"></a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Nature</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="./pets.html"><img src="../assets/img/imgCarousel/imgCarouselPets.jpg" class="d-block w-100" alt="dog"></a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Pets</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Carousel Desktop, end -->
+            <!-- Carousel Mobile -->
+            <div class="carousel-mobile">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="./people.html"><img src="../assets/img/imgCarousel/imgCarouselPeopleVertcal.jpg" class="d-block w-100" alt="girl dancing"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="./nature.html"><img src="../assets/img/imgCarousel/imgCarouselNatureVertical.jpg" class="d-block w-100" alt="road and tree"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="./pets.html"><img src="../assets/img/imgCarousel/imgCarouselPetsVertical.jpg" class="d-block w-100" alt="cat"></a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Carousel Mobile, end -->
+        </main>
+        <footer class="footer-dark">
+            <div class="socialmedia-container">
+                <li><a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://accounts.google.com/ServiceLogin/signinchooser?hl=es-419&passive=true&continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dgmail%26oq%3Dgmail%26aqs%3Dchrome..69i57j0i433i512l4j0i512j69i61l2.1672j0j4%26sourceid%3Dchrome%26ie%3DUTF-8&ec=GAZAAQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                        target="_blank"><i class="fa-regular fa-envelope"></i></a></li>
+            </div>
+            <div class="copyright-container">
+                <h5>&copy; Timeless Photography 2022</h5>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

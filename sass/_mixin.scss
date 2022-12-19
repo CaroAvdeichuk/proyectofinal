@@ -1,0 +1,135 @@
+//navs
+@mixin n-desktop {
+    width: 100%;
+    position: fixed;
+    margin-top: 15px;
+    text-decoration: none;
+    z-index: 1;
+
+    font: {
+        size: 1.5rem;
+        family: $text;
+    }
+
+    .horizontal {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 0;
+
+        .horizontal-item,
+        .horizontal-link {
+            text-decoration: none;
+
+            .vertical {
+                list-style: none;
+                display: none;
+
+                .vertical-item,
+                .vertical-link {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .horizontal li:hover .vertical {
+        display: block;
+    }
+}
+
+@mixin n-mobile {
+    text-decoration: none;
+    z-index: 1;
+
+    font: {
+        size: 1.5rem;
+        family: $text;
+    }
+
+    .mobile-button {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid: none;
+        i{ display: flex;
+            justify-content: flex-end;
+            margin: 15px 20px;
+        }
+    }
+
+    .mobile-button:hover .mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile {
+        list-style: none;
+        display: none;
+
+        .mobile-item,
+        .mobile-link {
+            text-decoration: none;
+
+            .mobile-sub {
+                list-style: none;
+                display: none;
+
+                .sub-item,
+                .sub-link {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .mobile li:hover .mobile-sub {
+        display: block;
+    }
+}
+
+//footer
+@mixin bottom-page {
+    .socialmedia-container {
+        list-style: none;
+        display: flex;
+
+        li {
+            margin: 0 20px;
+
+            a {
+                text-decoration: none;
+                color: $white;
+
+                &:hover {
+                    color: $yellow
+                }
+
+                i {
+                    font-size: 1.5rem;
+                    transition: color .4s ease;
+                }
+            }
+        }
+    }
+
+    .copyright-container {
+        display: flex;
+
+        h5 {
+            color: $yellow;
+            margin: 0 25px;
+
+            font: {
+                size: 1.2rem;
+                family: $text;
+            }
+        }
+    }
+}
+
+//backgrounds
+@mixin background{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

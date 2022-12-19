@@ -1,0 +1,257 @@
+//Nav
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "cont"
+        "foot";
+    height: 100vh;
+    grid-template-rows: 50px 1fr 50px;
+
+    header {
+        grid-area: header;
+
+        .nav-desktop {
+            @include n-desktop;
+            background: $blnavbg;
+
+            .horizontal-link,
+            .vertical-link {
+                color: $black;
+            }
+
+            a {
+                transition: color .4s ease;
+            }
+
+            a:hover {
+                color: $blnavhover
+            }
+        }
+
+        .nav-mobile {
+            @include n-mobile;
+            background: $blnavbg;
+
+            .mobile-link,
+            .sub-link {
+                color: $black;
+            }
+
+            a {
+                transition: color .4s ease;
+            }
+
+            a:hover {
+                color: $blnavhover
+            }
+        }
+    }
+
+    main {
+        grid-area: cont;
+    }
+
+    footer {
+        grid-area: foot;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+//Footer
+
+.footer-home {
+    @include bottom-page;
+    background-color: $ftrbg;
+}
+
+.footer-dark {
+    @include bottom-page;
+    background-color: $black;
+}
+
+//Home
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 5%;
+
+    .title-home {
+        display: flex;
+        font-family: $title;
+        font-size: 25rem;
+        font-weight: lighter;
+        color: $hometitle;
+    }
+
+    .subtitle-home {
+        display: flex;
+        font-family: $text;
+        font-size: 3rem;
+        color: $yellow;
+    }
+
+}
+
+.bg-home {
+    @include background;
+    background-image: url(../assets/img/imgBackground/imgHome.jpg);
+}
+
+//Titles
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-family: $title;
+    font-size: 8rem;
+}
+
+//About
+.bg-about {
+    @include background;
+    background-image: url(../assets/img/imgBackground/imgAboutUs.jpg);
+}
+
+.container-about {
+    display: flex;
+    margin: 0 5px;
+
+    .about-title {
+        display: flex;
+        font-family: $title;
+        font-size: 15rem;
+        color: $white;
+    }
+}
+
+.aboutph-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px;
+
+    .about {
+        color: $white;
+        font-family: $text;
+        text-align: center;
+    }
+
+    .about-paragraph {
+        @extend .about;
+        font-size: 1.7rem;
+    }
+
+    .about-sign {
+        @extend .about;
+        font-size: 2rem;
+    }
+}
+
+// Contact
+
+.form {
+    margin: 2px;
+    padding: 0;
+    .form-image {
+        .image-contact {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .form__right-side{
+        display: grid;
+        grid-template-rows: min-content;
+        .form-title {
+            display: flex;
+            justify-content: center;
+            margin: 15px 0;
+            font-family: $text;
+            font-size: 5rem;
+            font-weight: lighter;
+        }
+        .form-wrapper{
+            display: flex;
+            flex-direction: column;
+            .form__input-line{
+                font-family: $text;
+                font-size: 1.5rem;
+                margin: 5px 0;
+                .form-label {
+                    display: block;
+                    margin: 5px 0;
+                }
+                .form-input {
+                    outline: none;
+                    margin: 5px 0;
+                    border-bottom: 2px solid $blnavhover;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    color: $black;
+                    background-color: transparent;
+                }  
+                .form-textarea {
+                    @extend .form-input;
+                    resize: none;
+                    overflow: hidden;
+                    width: 100%;
+                }
+                .form-input-long {
+                    @extend .form-input;
+                    width: 100%;
+                }
+            }
+            .form-button{
+                display: flex;
+                justify-content: flex-end;
+                margin: 30px 10px;
+                .submit-button{
+                    padding: 20px 40px;
+                    background-color: $ftrbg;
+                    border-radius: 50px;
+                    color: $white;
+                    font-family: $text;
+                    border: none;
+                    font-size: 1.5rem;
+                    transition: 0.4s ease;
+                    &:hover{
+                        background-color: $hometitle;
+                        color: $black;
+                    }
+                }
+            } 
+        }
+    }
+}
+
+
+    //Gallerys
+
+    .photo-container {
+        margin: 0;
+
+        .photo-item {
+            display: flex;
+            flex-direction: column;
+            margin: 2px 0;
+            padding: 0 2px;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                @extend .photo-item;
+            }
+
+            .item-horizontal {
+                height: 500px;
+            }
+
+            .item-vertical {
+                height: 1000px;
+            }
+        }
+    }

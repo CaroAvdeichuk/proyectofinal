@@ -1,0 +1,25 @@
+//colors
+$black: #000;
+$white: #fff;
+$orange:rgb(236, 145, 25);
+$yellow: rgb(236, 183, 35);
+$aqua: rgb(22, 255, 255);
+$hometitle:rgba(236, 182, 35, 0.7);
+$ftrbg: rgba(0, 0, 0, 0.5);
+$blnavbg:rgb(215 215 215 / 80%);
+$blnavhover:rgba(44, 43, 43, 0.555);
+$whnavhover:rgba(99, 98, 98, 0.555);
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;600&display=swap');
+
+@font-face {
+    font-family: "Soul Adventures Script";
+    src: url(../assets/soulAdventuresScript/Soul\ Adventures\ Script.otf);
+}
+$text: "Josefin Sans";
+$title: "Soul Adventures Script";
+
+//size
+$mobile: 576px;
+$tablet: 768px;

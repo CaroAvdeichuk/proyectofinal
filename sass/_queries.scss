@@ -1,0 +1,60 @@
+@media (min-width:$tablet) {
+    .nav-mobile {
+        display: none;
+    }
+
+    .carousel-mobile {
+        display: none;
+    }
+
+}
+
+@media (max-width:$tablet) {
+    .nav-desktop {
+        display: none;
+    }
+
+    html {
+        font-size: 75%;
+    }
+
+    .grid-container {
+        grid-template-rows: 175px 1fr 50px;
+    }
+
+    .carousel-desktop {
+        display: none;
+    }
+
+    .about-paragraph{
+        margin: 0;
+    }
+    .submit-button{
+        padding: 15px 30px;
+    }
+
+}
+
+@media (max-width: 447px) {
+    html{
+        font-size: 70%;
+    }
+}
+
+@media (max-width: 360px) {
+    html{
+        font-size: 60%;
+    }
+}
+
+@media (max-width: 272px) {
+    html{
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 246px) {
+    html{
+        font-size: 30%;
+    }
+}

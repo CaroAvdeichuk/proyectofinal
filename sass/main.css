@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Soul Adventures Script";
+  src: url(../assets/soulAdventuresScript/Soul\ Adventures\ Script.otf);
+}
+.grid-container {
+  display: grid;
+  grid-template-areas: "header" "cont" "foot";
+  height: 100vh;
+  grid-template-rows: 50px 1fr 50px;
+}
+.grid-container header {
+  grid-area: header;
+}
+.grid-container header .nav-desktop {
+  width: 100%;
+  position: fixed;
+  margin-top: 15px;
+  text-decoration: none;
+  z-index: 1;
+  font-size: 1.5rem;
+  font-family: "Josefin Sans";
+  background: rgba(215, 215, 215, 0.8);
+}
+.grid-container header .nav-desktop .horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 0;
+}
+.grid-container header .nav-desktop .horizontal .horizontal-item,
+.grid-container header .nav-desktop .horizontal .horizontal-link {
+  text-decoration: none;
+}
+.grid-container header .nav-desktop .horizontal .horizontal-item .vertical,
+.grid-container header .nav-desktop .horizontal .horizontal-link .vertical {
+  list-style: none;
+  display: none;
+}
+.grid-container header .nav-desktop .horizontal .horizontal-item .vertical .vertical-item,
+.grid-container header .nav-desktop .horizontal .horizontal-item .vertical .vertical-link,
+.grid-container header .nav-desktop .horizontal .horizontal-link .vertical .vertical-item,
+.grid-container header .nav-desktop .horizontal .horizontal-link .vertical .vertical-link {
+  text-decoration: none;
+}
+.grid-container header .nav-desktop .horizontal li:hover .vertical {
+  display: block;
+}
+.grid-container header .nav-desktop .horizontal-link,
+.grid-container header .nav-desktop .vertical-link {
+  color: #000;
+}
+.grid-container header .nav-desktop a {
+  transition: color 0.4s ease;
+}
+.grid-container header .nav-desktop a:hover {
+  color: rgba(44, 43, 43, 0.555);
+}
+.grid-container header .nav-mobile {
+  text-decoration: none;
+  z-index: 1;
+  font-size: 1.5rem;
+  font-family: "Josefin Sans";
+  background: rgba(215, 215, 215, 0.8);
+}
+.grid-container header .nav-mobile .mobile-button {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid: none;
+}
+.grid-container header .nav-mobile .mobile-button i {
+  display: flex;
+  justify-content: flex-end;
+  margin: 15px 20px;
+}
+.grid-container header .nav-mobile .mobile-button:hover .mobile {
+  display: flex;
+  flex-direction: column;
+}
+.grid-container header .nav-mobile .mobile {
+  list-style: none;
+  display: none;
+}
+.grid-container header .nav-mobile .mobile .mobile-item,
+.grid-container header .nav-mobile .mobile .mobile-link {
+  text-decoration: none;
+}
+.grid-container header .nav-mobile .mobile .mobile-item .mobile-sub,
+.grid-container header .nav-mobile .mobile .mobile-link .mobile-sub {
+  list-style: none;
+  display: none;
+}
+.grid-container header .nav-mobile .mobile .mobile-item .mobile-sub .sub-item,
+.grid-container header .nav-mobile .mobile .mobile-item .mobile-sub .sub-link,
+.grid-container header .nav-mobile .mobile .mobile-link .mobile-sub .sub-item,
+.grid-container header .nav-mobile .mobile .mobile-link .mobile-sub .sub-link {
+  text-decoration: none;
+}
+.grid-container header .nav-mobile .mobile li:hover .mobile-sub {
+  display: block;
+}
+.grid-container header .nav-mobile .mobile-link,
+.grid-container header .nav-mobile .sub-link {
+  color: #000;
+}
+.grid-container header .nav-mobile a {
+  transition: color 0.4s ease;
+}
+.grid-container header .nav-mobile a:hover {
+  color: rgba(44, 43, 43, 0.555);
+}
+.grid-container main {
+  grid-area: cont;
+}
+.grid-container footer {
+  grid-area: foot;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-home {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.footer-home .socialmedia-container {
+  list-style: none;
+  display: flex;
+}
+.footer-home .socialmedia-container li {
+  margin: 0 20px;
+}
+.footer-home .socialmedia-container li a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer-home .socialmedia-container li a:hover {
+  color: rgb(236, 183, 35);
+}
+.footer-home .socialmedia-container li a i {
+  font-size: 1.5rem;
+  transition: color 0.4s ease;
+}
+.footer-home .copyright-container {
+  display: flex;
+}
+.footer-home .copyright-container h5 {
+  color: rgb(236, 183, 35);
+  margin: 0 25px;
+  font-size: 1.2rem;
+  font-family: "Josefin Sans";
+}
+
+.footer-dark {
+  background-color: #000;
+}
+.footer-dark .socialmedia-container {
+  list-style: none;
+  display: flex;
+}
+.footer-dark .socialmedia-container li {
+  margin: 0 20px;
+}
+.footer-dark .socialmedia-container li a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer-dark .socialmedia-container li a:hover {
+  color: rgb(236, 183, 35);
+}
+.footer-dark .socialmedia-container li a i {
+  font-size: 1.5rem;
+  transition: color 0.4s ease;
+}
+.footer-dark .copyright-container {
+  display: flex;
+}
+.footer-dark .copyright-container h5 {
+  color: rgb(236, 183, 35);
+  margin: 0 25px;
+  font-size: 1.2rem;
+  font-family: "Josefin Sans";
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 5%;
+}
+.title-container .title-home {
+  display: flex;
+  font-family: "Soul Adventures Script";
+  font-size: 25rem;
+  font-weight: lighter;
+  color: rgba(236, 182, 35, 0.7);
+}
+.title-container .subtitle-home {
+  display: flex;
+  font-family: "Josefin Sans";
+  font-size: 3rem;
+  color: rgb(236, 183, 35);
+}
+
+.bg-home {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/img/imgBackground/imgHome.jpg);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: "Soul Adventures Script";
+  font-size: 8rem;
+}
+
+.bg-about {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/img/imgBackground/imgAboutUs.jpg);
+}
+
+.container-about {
+  display: flex;
+  margin: 0 5px;
+}
+.container-about .about-title {
+  display: flex;
+  font-family: "Soul Adventures Script";
+  font-size: 15rem;
+  color: #fff;
+}
+
+.aboutph-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5px;
+}
+.aboutph-container .about, .aboutph-container .about-sign, .aboutph-container .about-paragraph {
+  color: #fff;
+  font-family: "Josefin Sans";
+  text-align: center;
+}
+.aboutph-container .about-paragraph {
+  font-size: 1.7rem;
+}
+.aboutph-container .about-sign {
+  font-size: 2rem;
+}
+
+.form {
+  margin: 2px;
+  padding: 0;
+}
+.form .form-image .image-contact {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.form .form__right-side {
+  display: grid;
+  grid-template-rows: -webkit-min-content;
+  grid-template-rows: min-content;
+}
+.form .form__right-side .form-title {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  font-family: "Josefin Sans";
+  font-size: 5rem;
+  font-weight: lighter;
+}
+.form .form__right-side .form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.form .form__right-side .form-wrapper .form__input-line {
+  font-family: "Josefin Sans";
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+.form .form__right-side .form-wrapper .form__input-line .form-label {
+  display: block;
+  margin: 5px 0;
+}
+.form .form__right-side .form-wrapper .form__input-line .form-input, .form .form__right-side .form-wrapper .form__input-line .form-input-long, .form .form__right-side .form-wrapper .form__input-line .form-textarea {
+  outline: none;
+  margin: 5px 0;
+  border-bottom: 2px solid rgba(44, 43, 43, 0.555);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #000;
+  background-color: transparent;
+}
+.form .form__right-side .form-wrapper .form__input-line .form-textarea {
+  resize: none;
+  overflow: hidden;
+  width: 100%;
+}
+.form .form__right-side .form-wrapper .form__input-line .form-input-long {
+  width: 100%;
+}
+.form .form__right-side .form-wrapper .form-button {
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 10px;
+}
+.form .form__right-side .form-wrapper .form-button .submit-button {
+  padding: 20px 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  color: #fff;
+  font-family: "Josefin Sans";
+  border: none;
+  font-size: 1.5rem;
+  transition: 0.4s ease;
+}
+.form .form__right-side .form-wrapper .form-button .submit-button:hover {
+  background-color: rgba(236, 182, 35, 0.7);
+  color: #000;
+}
+
+.photo-container {
+  margin: 0;
+}
+.photo-container .photo-item, .photo-container .photo-item img {
+  display: flex;
+  flex-direction: column;
+  margin: 2px 0;
+  padding: 0 2px;
+}
+.photo-container .photo-item img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.photo-container .photo-item .item-horizontal {
+  height: 500px;
+}
+.photo-container .photo-item .item-vertical {
+  height: 1000px;
+}
+
+@media (min-width: 768px) {
+  .nav-mobile {
+    display: none;
+  }
+  .carousel-mobile {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .nav-desktop {
+    display: none;
+  }
+  html {
+    font-size: 75%;
+  }
+  .grid-container {
+    grid-template-rows: 175px 1fr 50px;
+  }
+  .carousel-desktop {
+    display: none;
+  }
+  .about-paragraph {
+    margin: 0;
+  }
+  .submit-button {
+    padding: 15px 30px;
+  }
+}
+@media (max-width: 447px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media (max-width: 360px) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 272px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 246px) {
+  html {
+    font-size: 30%;
+  }
+}/*# sourceMappingURL=main.css.map */
